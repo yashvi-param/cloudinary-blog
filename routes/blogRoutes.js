@@ -8,7 +8,7 @@ router.post("/add", upload.single("image"), blogController.createBlog);
 
 router.get("/allBlogs", blogController.allBlogs);
 
-router.get("/allBlog", blogController.getBlog);
+router.get("/:id", blogController.getSingleBlog);
 
 router.patch(
   "/update/:id",

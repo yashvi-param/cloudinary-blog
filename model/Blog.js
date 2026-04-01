@@ -25,7 +25,7 @@ const blogSchema = new mongoose.Schema(
   },
 
   //image or video URL
-  cdnUrl: {
+  image: {
     type: String,
   },
 

@@ -17,7 +17,7 @@ const createBlog = async (req, res, next) => {
       content,
       author,
       category,
-      cdnUrl: req.file.path,
+      image: req.file.path,
       cloudinary_Id: req.file.filename,
     });
 

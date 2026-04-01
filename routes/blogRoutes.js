@@ -4,15 +4,15 @@ import upload from "../middleware/upload.js";
 
 const router = express.Router();
 
-router.post("/add", upload.single("file"), blogController.createBlog);
+router.post("/add", upload.single("image"), blogController.createBlog);
 
 router.get("/allBlogs", blogController.allBlogs);
 
-router.get("/:id", blogController.getBlog);
+router.get("/allBlog", blogController.getBlog);
 
 router.patch(
   "/update/:id",
-  upload.single("file"),
+  upload.single("image"),
   blogController.updateBlog
 );
 

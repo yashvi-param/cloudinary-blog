@@ -118,7 +118,7 @@ const updateBlog = async (req, res, next) => {
         await cloudinary.uploader.destroy(blog.cloudinary_Id);
       }
 
-      blog.cdnUrl = req.file.path;
+      blog.image = req.file.path;
       blog.cloudinary_Id = req.file.filename;
     }
 

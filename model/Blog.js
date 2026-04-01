@@ -20,8 +20,8 @@ const blogSchema = new mongoose.Schema(
 
   category: {
     type: String,
-    enum: ["Technology", "Travel", "Food", "Lifestyle", "Education"],
-    default: "Technology",
+     enum: ["Tech", "Health", "Business", "Sports", "Entertainment"],
+  default: "Tech",
   },
 
   //image or video URL

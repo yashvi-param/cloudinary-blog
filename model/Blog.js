@@ -1,0 +1,42 @@
+import mongoose from "mongoose";
+
+const blogSchema = new mongoose.Schema(
+{
+  title: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+
+  content: {
+    type: String,
+    required: true,
+  },
+
+  author: {
+    type: String,
+    required: true,
+  },
+
+  category: {
+    type: String,
+    enum: ["Technology", "Travel", "Food", "Lifestyle", "Education"],
+    default: "Technology",
+  },
+
+  //image or video URL
+  cdnUrl: {
+    type: String,
+  },
+
+  cloudinary_Id: {
+    type: String,
+  },
+
+},
+{ timestamps: true }
+);
+
+const Blog = mongoose.model("Blog", blogSchema);
+
+export default Blog;

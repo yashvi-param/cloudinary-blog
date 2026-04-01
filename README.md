@@ -44,7 +44,15 @@ GET ALL BLOGS
 
 GET SINGLE BLOG
 
+<img width="1920" height="1080" alt="Screenshot 2026-04-01 141002" src="https://github.com/user-attachments/assets/39c0d6db-845a-4842-bf59-3bc4e63f36a1" />
 
+UPDATE BLOG
+
+<img width="1920" height="1080" alt="Screenshot 2026-04-01 141240" src="https://github.com/user-attachments/assets/42f249c8-8099-42fc-9d2f-10960939088f" />
+
+DELETE BLOG 
+
+<img width="1920" height="1080" alt="Screenshot 2026-04-01 141656" src="https://github.com/user-attachments/assets/fb442b1c-0b4a-4cf0-9932-02d39ec41dfa" />
 
 
 

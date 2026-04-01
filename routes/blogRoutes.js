@@ -6,15 +6,19 @@ const router = express.Router();
 
 router.post("/add", upload.single("image"), blogController.createBlog);
 
+
 router.get("/allBlogs", blogController.allBlogs);
 
+
 router.get("/:id", blogController.getBlog);
+
 
 router.patch(
   "/update/:id",
   upload.single("image"),
   blogController.updateBlog
 );
+
 
 router.delete("/delete/:id", blogController.deleteBlog);
 

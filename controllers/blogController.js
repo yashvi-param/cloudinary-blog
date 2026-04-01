@@ -3,7 +3,6 @@ import HttpError from "../middleware/httpError.js";
 import cloudinary from "../config/cloudinary.js";
 
 
-// CREATE BLOG
 const createBlog = async (req, res, next) => {
   try {
 

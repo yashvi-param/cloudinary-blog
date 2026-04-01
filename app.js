@@ -10,26 +10,21 @@ dotenv.config({ path: "./.env" });
 
 const app = express();
 
-// Middlewares
 app.use(cors());
 app.use(express.json());
 
-// Routes
 app.use("/blogs", blogRoutes); 
 
-// Home Route
 app.get("/", (req, res) => {
   res.status(200).json({
     message: "Blog API is running successfully 📝",
   });
 });
 
-// 404 Handler
 app.use((req, res, next) => {
   next(new HttpError("Requested route not found", 404));
 });
 
-// Global Error Handler
 app.use((error, req, res, next) => {
   res.status(error.statusCode || 500).json({
     success: false,

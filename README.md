@@ -31,12 +31,25 @@ npm install
 screenshot:
 
 HOME ROUTE
+
 <img width="1920" height="1080" alt="Screenshot 2026-04-01 113908" src="https://github.com/user-attachments/assets/adba4357-e8a9-4dbb-bee3-2d5c4b01ab7a" />
 
 CREATE BLOG
 
+<img width="1920" height="1080" alt="Screenshot 2026-04-01 124641" src="https://github.com/user-attachments/assets/9123eeac-0b2a-4088-97ca-744949a73d07" />
+
+GET ALL BLOGS
+
+<img width="1920" height="1080" alt="Screenshot 2026-04-01 125125" src="https://github.com/user-attachments/assets/abec27b2-dde5-4d01-a47b-f39e71ec329c" />
+
+GET SINGLE BLOG
+
+
+
+
 
 🔑 Environment Variables
+
 
 Create a .env file in the root folder and add:
 
